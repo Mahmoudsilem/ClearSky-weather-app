@@ -47,7 +47,7 @@ function getDate(currentDate) {
 
 async function getCityWeather(city) {
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=02cca43f9a9547ae840111326241310&q=${city}&days=7`);
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=02cca43f9a9547ae840111326241310&q=${city}&days=7`);
         const data = await response.json();
 
         day1.cityName.innerHTML = data.location.name;
