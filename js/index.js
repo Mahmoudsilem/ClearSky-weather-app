@@ -79,7 +79,7 @@ async function getCityWeather(city) {
     } catch (error) {
         console.log(error);
         
-        alert("We're unable to retrieve the API product key at this time. This could be due to a temporary network issue or a problem with the API service. Please try again later.");       
+        // alert("We're unable to retrieve the API product key at this time. This could be due to a temporary network issue or a problem with the API service. Please try again later.");       
     }
 
 
