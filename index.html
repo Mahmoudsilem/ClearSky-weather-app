@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-5">
+        <div class="container">
+            <a class="navbar-brand d-flex" href="#">
+                <div>
+                    <img src="./imgs/logo.png" alt="wether">
+                </div>
+                <div class="ms-3">
+                    <h1 class=" mb-0 ">Weather</h1>
+                    <small class="mt-0">tagline goes here</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-container">
+            <div class="banner">
+                <div class="main-inner pt-5">
+                    <div class="container">
+                        <form class="d-flex search-input position-relative" role="search">
+                            <input id="inputSearchLocation" class="form-control me-2" type="search"
+                                placeholder="Find your location...." aria-label="Search">
+                            <button class="btn position-absolute" type="submit">Find</button>
+                        </form>
+
+                        <div class="row gx-0 pt-5">
+                            <div class="col-md-4">
+                                <div id="mainCard" class="card day1 main-card border-0 rounded-end-0">
+                                    <div class="card-header rounded-end-0 border-0 d-flex justify-content-between">
+                                        <span class="day-of-week">day</span>
+                                        <span class="date">7October</span>
+                                    </div>
+                                    <div class="card-body rounded-end-0">
+                                        <h1 id="cityName">City</h1>
+                                        <h2 class="text-white"> <span class="max-temp">0</span><sup>o</sup>C</h2>
+                                        <img class="wether-condition-img" src="./imgs/sun.png" alt="wether condition">
+                                        <h3 class="wether-condition mt-2">Sunny</h3>
+                                    </div>
+                                    <div class="card-footer border-top-0 rounded-end-0 d-flex">
+                                        <div class="icon me-3">
+                                            <img src="./imgs/icon-umberella.png" alt="wether condition">
+                                            <span>20%</span>
+                                        </div>
+                                        <div class="icon me-3">
+                                            <img src="./imgs/icon-wind.png" alt="">
+                                            <span>18km/h</span>
+                                        </div>
+                                        <div class="icon">
+                                            <img src="./imgs/icon-compass.png" alt="">
+                                            <span>East</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card day2 secondary-card border-0 rounded-0">
+                                    <div class="card-header card2-header border-0 rounded-0">
+                                        <span class="day-of-week">day</span>
+                                    </div>
+                                    <div class="card-body card2-header rounded-0">
+                                        <div class="pt-5">
+                                            <div class="pb-3">
+                                                <img class="wether-condition-img" src="./imgs/sun.png"
+                                                    alt="wether condition">
+                                            </div>
+                                            <h1 class="mb-0"><span class="max-temp">0</span><sup>o</sup>C</h1>
+                                            <h2 class="min-temp text-white mt-0">0<sup>o</sup></h2>
+                                            <h3 class="wether-condition pt-4">Sunny</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card day3 secondary-card border-0 rounded-start-0">
+                                    <div class="card-header card3-header border-0 rounded-start-0">
+                                        <span class="day-of-week">day</span>
+                                    </div>
+                                    <div class="card-body card3-header rounded-start-0">
+                                        <div class="pt-5">
+                                            <div class="pb-3">
+                                                <img class="wether-condition-img" src="./imgs/sun.png"
+                                                    alt="wether condition">
+                                            </div>
+                                            <h1 class="mb-0"><span class="max-temp">0</span><sup>o</sup>C</h1>
+                                            <h2 class="min-temp text-white mt-0">0<sup>o</sup></h2>
+                                            <h3 class="wether-condition pt-4">Sunny</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-8">
+                    <form class="d-flex search-input position-relative" role="search">
+                        <input id="inputSearchLocation" class="form-control me-2" type="email"
+                            placeholder="Enter Your Email to subscribe..." aria-label="email">
+                        <button class="btn position-absolute" type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="icons d-flex">
+                        <div class="icon me-3">
+                            <span>
+                                <i class="fab fa-facebook-f"></i>
+                            </span>
+                        </div>
+                        <div class="icon me-3">
+                            <span>
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                        </div>
+                        <div class="icon me-3">
+                            <span>
+                                <i class="fab fa-google-play"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span>
+                                <i class="fab fa-pinterest"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <p>Copyright 2014 Company name. Designed by Selim. All rights reserved</p>
+            </div>
+    </footer>
+
+
+
+    <!-- <script src="./js/index2.js"></script> -->
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
